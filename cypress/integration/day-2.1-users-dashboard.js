@@ -12,7 +12,7 @@
   - I'm given a button/link to start learning
   - I'm shown the total score for guessing words
 */
-describe(`User story: User's dashboard`, function() {
+describe(`User story: User's dashboard`, function () {
   beforeEach(() => {
     cy.server()
       .route({
@@ -62,13 +62,13 @@ describe(`User story: User's dashboard`, function() {
           cy.root()
             .should(
               'contain',
-              `correct answer count: ${word.correct_count}`
+              `Correct Answer Count: ${word.correct_count}`
             )
 
           cy.root()
             .should(
               'contain',
-              `incorrect answer count: ${word.incorrect_count}`
+              `Incorrect Answer Count: ${word.incorrect_count}`
             )
         })
       })

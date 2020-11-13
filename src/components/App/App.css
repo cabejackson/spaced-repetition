@@ -1,0 +1,35 @@
+.fullPage {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    /* background-color: #6e8f7d; */
+    /* background-image: url("../LoginForm/sunset.jpg"); */
+    /* background-size: cover; */
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-position: bottom;
+    background-attachment: scroll;
+    color: whitesmoke
+}
+
+h1,
+h2,
+h3,
+p {
+    color: black
+}
+
+body {
+    /* background-color: darkgrey; */
+    /* background-color: #ffd966; */
+    /* background-color: #098930; */
+    background-color: #FC7102;
+    /* background-image: url("blueGradient.jpg"); */
+    margin: 0px;
+    /* text-align: left; */
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: bottom;
+    background-attachment: scroll;
+}

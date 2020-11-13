@@ -1,0 +1,75 @@
+.header {
+    padding: 15px;
+    padding-left: 60px;
+    text-align: center;
+    background: black;
+    font-size: 16px;
+    text-transform: uppercase;
+    /* background-color: #D4DF9E; */
+    /* background-color: #050609; */
+    /* background-color: #D00000; */
+    background-color: #1D1415;
+    /* background-image: url(./greenishGradient.jpg); */
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: scroll;
+}
+
+
+h2,
+h3,
+h4,
+span,
+p {
+    /* color: whitesmoke */
+    /* color: #FFFC31 */
+    color: #CFDFE7
+}
+
+.welcome {
+    color: white;
+    text-align: left;
+
+}
+
+.spacedRep___Link {
+    /* color: whitesmoke */
+    /* color: #FFFC31 */
+    color: #CFDFE7
+        /* color: black */
+}
+
+.navBar__ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+
+}
+
+li {
+    float: none;
+}
+
+li a {
+    display: block;
+    /* color: white; */
+    /* color: #FFFC31; */
+    color: #CFDFE7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #387b45;
+}
+
+/* .logo img {
+
+    margin: -30px;
+    margin-right: 200px;
+    float: left;
+    height: 100px;
+} */

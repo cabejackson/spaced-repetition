@@ -1,0 +1,64 @@
+body {
+    /* background-color: lightgrey; */
+    /* background-image: url("sunset.jpg"); */
+    margin: 0px;
+    /* text-align: left; */
+}
+
+Header {
+    /* background-color: darkgray; */
+    margin: 0px;
+    /* text-align: left; */
+}
+
+h1,
+h3,
+p {
+    color: black
+}
+
+.loginText {
+    color: whitesmoke
+}
+
+.LoginForm {
+    /* background-color: #6e8f7d; */
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    /* background-color: #6e8f7d; */
+    /* background-image: url("sunset.jpg"); */
+    /* background-size: cover; */
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-position: bottom;
+    background-attachment: scroll;
+    color: whitesmoke
+}
+
+.login___btn {
+    /* border-radius: 50px; */
+    border: solid #0A0908;
+    background-color: #387b45;
+    color: #0A0908;
+    font-family: 'Markazi Text',
+        serif;
+    font-size: 20px;
+    margin: auto;
+    align-content: left;
+
+}
+
+
+
+.login___btn a {
+    text-decoration: none;
+    color: #0A0908;
+
+
+}
+
+.login___btn:hover {
+    background-color: #81B8D9
+}

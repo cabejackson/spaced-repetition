@@ -4,7 +4,7 @@ import TokenService from '../../services/token-service'
 import UserContext from '../../contexts/UserContext'
 import './Header.css'
 
-class Header extends Component {
+export default class Header extends Component {
   static contextType = UserContext
 
   handleLogoutClick = () => {
@@ -15,14 +15,18 @@ class Header extends Component {
     return (
       <div>
         <span>
-          {this.context.user.name}
+          Welcome {this.context.user.name}
         </span>
-        <nav>
-          <Link
-            onClick={this.handleLogoutClick}
-            to='/login'>
-            Logout
+        <nav className="navBar__ul">
+          <ul>
+            <li>
+              <Link
+                onClick={this.handleLogoutClick}
+                to='/login'>
+                Logout
           </Link>
+            </li>
+          </ul>
         </nav>
       </div>
     )
@@ -30,19 +34,24 @@ class Header extends Component {
 
   renderLoginLink() {
     return (
-      <nav>
-        <Link to='/login'>Login</Link>
-        {' '}
-        <Link to='/register'>Sign up</Link>
+      <nav className="navBar__ul">
+        <ul>
+          <li>
+            <Link to='/login'>Login</Link>
+          </li>
+          <li>
+            <Link to='/register'>Sign up</Link>
+          </li>
+        </ul>
       </nav>
     )
   }
 
   render() {
     return (
-      <header>
+      <header className="header">
         <h1>
-          <Link to='/'>
+          <Link to='/' className="spacedRep___Link">
             Spaced repetition
           </Link>
         </h1>
@@ -54,4 +63,3 @@ class Header extends Component {
   }
 }
 
-export default Header
