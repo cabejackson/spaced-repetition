@@ -3,7 +3,7 @@
 This app allows users to learn a new language using the scientifically proven spaced repetition method.
 It also utilizes Linked Lists data structure to provide a more efficient client experience.
 
-Here's the deployed version of `Langly`: [Langly](https://petful-client-indol.vercel.app/ "Langly")
+Here's the deployed version of `Langly`: [Langly](https://langly.vercel.app "Langly")
 
 ### Demo Accounts:
 
