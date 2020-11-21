@@ -8,7 +8,7 @@
     /* background-color: #D4DF9E; */
     /* background-color: #050609; */
     /* background-color: #D00000; */
-    background-color: #1D1415;
+    background-color: #090909;
     /* background-image: url(./greenishGradient.jpg); */
     background-size: cover;
     background-position: bottom;
@@ -50,6 +50,7 @@ p {
 
 li {
     float: none;
+    text-decoration: none;
 }
 
 li a {
@@ -64,6 +65,8 @@ li a {
 
 li a:hover {
     background-color: #387b45;
+    text-decoration: none;
+
 }
 
 /* .logo img {
