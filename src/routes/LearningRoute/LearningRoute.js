@@ -72,7 +72,7 @@ export default class LearningRoute extends Component {
       return (
         <section className="Learning-Route">
           <h2>Translate the word:</h2>
-          <div className="Learning-Route-alert" role="">
+          <div className="Learning-Route-alert">
             {error && <p>{error}</p>}
           </div>
           <span className="Learning-Route-new-word">{this.state.nextWord}</span>
@@ -109,18 +109,20 @@ export default class LearningRoute extends Component {
     if (this.state.isCorrect === true) {
       return (
         <div className="DisplayScore___container">
-          <div className="displayScore">
+
+          <main className="displayScore">
             <p>Your total score is: {this.state.totalScore}</p>
-          </div>
-          <h2 className="correct">You were correct! :D</h2>
-          <div className="displayFeedback">
+            <h2 className="correct">You were correct! :D</h2>
+          </main>
+          <main className="displayFeedback">
             <p>
               The correct translation for {this.state.currentWord} was {this.state.answer} and you chose {this.state.guess}!
             </p>
-          </div>
-          <button type="button" onClick={this.handleGoToNextQuestion}>
-            Try another word!
+            <button type="button" onClick={this.handleGoToNextQuestion}>
+              Try another word!
           </button>
+          </main>
+
         </div>
       );
     }
@@ -128,20 +130,21 @@ export default class LearningRoute extends Component {
     if (this.state.isCorrect === false) {
       return (
         <div className="DisplayScore-container">
-          <div className="DisplayScore">
+          <main className="displayScore">
             <p>Your total score is: {this.state.totalScore}</p>
-          </div>
-          <h2 className="incorrect">Good try, but not quite right :/</h2>
-          <div className="displayFeedback">
+            <h2 className="incorrect">Good try, but not quite right :/</h2>
+          </main>
+          <main className="displayFeedback">
             <p>
               The correct translation for {this.state.currentWord} was {this.state.answer} and you chose {this.state.guess}!
             </p>
-          </div>
-          <button type="button" onClick={this.handleGoToNextQuestion}>
-            Try another word!
+            <button type="button" onClick={this.handleGoToNextQuestion}>
+              Try another word!
           </button>
+          </main>
         </div>
       )
     }
   }
 }
+
